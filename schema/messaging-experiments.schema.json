@@ -43,7 +43,7 @@
           "minItems": 1,
           "items": {
             "type": "object",
-            "required": ["slug", "ratio"],
+            "required": ["slug", "value", "ratio"],
             "properties": {
               "slug": {
                 "description": "Unique identifier for this branch of the experiment",
@@ -68,7 +68,7 @@
                 "type": "integer",
                 "minimum": 1
               },
-              "feature": {
+              "groups": {
                 "description":
                 "A list of experiment features that can be used to exclude or select related experiments",
                 "type": "array",
